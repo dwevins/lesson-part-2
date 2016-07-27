@@ -20,4 +20,4 @@ const Route = use('Route');
 Route.on('/').render('welcome');
 
 Route.get('/register', 'RegisterController.new');
-Route.get('/register', 'RegisterController.create');
+Route.post('/register', 'RegisterController.create');

@@ -14,22 +14,19 @@
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-          <li><a href=""></a></li>
+          <li><a href="/">Recipe Book</a></li>
         </ul>
       </div>
       <div class="top-bar-right">
         <ul class="menu menu--justify-right">
-          <li><button class="button"></button></li>
+          <li><button type='button'class="button">Search</button></li>
         </ul>
       </div>
     </div>
   </header>
-  {% block content %}
-  {% endblock %}
-
-  {% block footer %}
-
-  {% endblock %}
-
+  <section class="main-content">
+    {% block content %}
+    {% endblock %}
+  </section>
 </body>
 </html>
