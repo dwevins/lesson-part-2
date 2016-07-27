@@ -10,24 +10,26 @@
 </head>
 <body>
 
-  <section>
-    <div class="__wrapper">
-      {% block content %}
-      {% endblock %}
+  <header>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu menu--justify-right">
+          <li><button class="button"></button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  {% block content %}
+  {% endblock %}
 
-      {% block footer %}
-        <div class="__footer">
-          <ul>
-            <li>
-              <a href="https://twitter.com/intent/tweet?url=http://adonisjs.com&text=I am using AdonisJs, a practical MVC framework for nodejs&hashtags=nodejs,adonisframework" target="_blank"><img src="/assets/twitter.svg"></a>
-            </li>
-            <li>
-              <a href="https://github.com/adonisjs/adonis-framework" target="_blank"><img src="/assets/github.svg"></a>
-            </li>
-          </ul>
-        </div>
-      {% endblock %}
-    </div><!-- end wrapper -->
-  </section>
+  {% block footer %}
+
+  {% endblock %}
+
 </body>
 </html>
